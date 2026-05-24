@@ -64,7 +64,8 @@ function generatePackageJson(packageJson, { packageConfig }) {
     },
     scripts: {
       prepublishOnly:
-        "node -e \"assert.equal(require('.').version, require('..').version)\"",
+        // HACK: Not sure why require('..') works for them
+        "node -e \"assert.equal(require('.').version, require('../..').version)\"",
     },
   };
 }

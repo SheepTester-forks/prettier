@@ -48,7 +48,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for how testing works.
 
 ```sh
 yarn build
-cd dist
+cd dist/prettier
 npm publish --access public
 ```
 
