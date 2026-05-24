@@ -42,6 +42,16 @@ See the [StandardJS test snapshot diff](https://github.com/SheepTester-forks/pre
 - Top-level comma expressions are now wrapped in parentheses `;(a, b)`.
 - Long template literals now get wrapped.
 
+## Development
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for how testing works.
+
+```sh
+yarn build
+cd dist
+npm publish --access public
+```
+
 ---
 
 [![Prettier Banner](https://unpkg.com/prettier-logo@1.0.3/images/prettier-banner-light.svg)](https://prettier.io)
