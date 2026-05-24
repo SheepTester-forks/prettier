@@ -1,8 +1,8 @@
 # Fork of Prettier
 
-This is a fork of Prettier to support StandardJS. As the years pass, [prettier-standard](https://github.com/sheerun/prettier-standard) and [prettierx](https://github.com/brody2consult/prettierx) get increasingly out of date, and my formatters are unable to format new JavaScript/TypeScript syntax features like import attributes.
+This is a fork of [Prettier](https://prettier.io/) to support StandardJS. As the years pass, [prettier-standard](https://github.com/sheerun/prettier-standard) and [prettierX](https://github.com/brody2consult/prettierx) get increasingly out of date, and my formatters are unable to format new JavaScript/TypeScript syntax features like import attributes. And now the [Prettier VS Code extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) no longer accepts prettierX's version number.
 
-The goal of this fork is to port the following four new config options from prettierx:
+The goal of this fork is to port the following four new config options from prettierX:
 
 - `generatorStarSpacing`
 - `spaceBeforeFunctionParen`
@@ -35,9 +35,19 @@ Then put the above config in `.prettierrc.yml`.
 
 The API should otherwise be identical to Prettier, so for example, `npx prettier . --write` will format all your files.
 
+In VS Code, you can specify the Prettier instance you're using with
+
+```json
+{
+  "prettier.prettierPath": "@sheeptester/prettier"
+}
+```
+
+Other IDEs probably have an equivalent setting.
+
 ## Known differences
 
-See the [StandardJS test snapshot diff](https://github.com/SheepTester-forks/prettier/commit/1f6d085b5ebdc8cee979ef76728b2647506bf44e). Compared to prettierx,
+See the [StandardJS test snapshot diff](https://github.com/SheepTester-forks/prettier/commit/1f6d085b5ebdc8cee979ef76728b2647506bf44e). Compared to prettierX,
 
 - Top-level comma expressions are now wrapped in parentheses `;(a, b)`.
 - Long template literals now get wrapped.
@@ -49,6 +59,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for how testing works.
 ```sh
 yarn build
 cd dist/prettier
+# Add `--tag alpha` if publishing a prerelease version
 npm publish --access public
 ```
 

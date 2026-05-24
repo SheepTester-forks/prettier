@@ -52,8 +52,8 @@ function createPackageJsonBuilder({ process }) {
     };
 
     // Rewrite `bin`
-    if (original.bin) {
-      const originalBinFile = path.join(sourceDirectory, original.bin);
+    if (original.bin?.prettier) {
+      const originalBinFile = path.join(sourceDirectory, original.bin.prettier);
       const bin = packageFiles.find(
         (file) =>
           file.input &&
@@ -61,7 +61,7 @@ function createPackageJsonBuilder({ process }) {
       ).output;
 
       assert.ok(typeof bin === "string");
-      packageJson.bin = `./${bin}`;
+      packageJson.bin = { prettier: `./${bin}` };
     }
 
     if (process) {
