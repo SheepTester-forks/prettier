@@ -23,6 +23,18 @@ yieldStarSpacing: true
 trailingComma: none
 ```
 
+## Usage
+
+Install my fork with
+
+```sh
+npm install -D @sheeptester/prettier
+```
+
+Then put the above config in `.prettierrc.yml`.
+
+The API should otherwise be identical to Prettier, so for example, `npx prettier . --write` will format all your files.
+
 ---
 
 [![Prettier Banner](https://unpkg.com/prettier-logo@1.0.3/images/prettier-banner-light.svg)](https://prettier.io)
