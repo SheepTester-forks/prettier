@@ -1,6 +1,6 @@
 # Fork of Prettier
 
-This is a fork of Prettier to support StandardJS. As the years pass, [prettier-standard](https://github.com/sheerun/prettier-standard) and [prettierx](https://github.com/brody2consult/prettierx) get increasingly out of date, my formatters are unable to format new JavaScript/TypeScript syntax features like import attributes.
+This is a fork of Prettier to support StandardJS. As the years pass, [prettier-standard](https://github.com/sheerun/prettier-standard) and [prettierx](https://github.com/brody2consult/prettierx) get increasingly out of date, and my formatters are unable to format new JavaScript/TypeScript syntax features like import attributes.
 
 The goal of this fork is to port the following four new config options from prettierx:
 
@@ -34,6 +34,13 @@ npm install -D @sheeptester/prettier
 Then put the above config in `.prettierrc.yml`.
 
 The API should otherwise be identical to Prettier, so for example, `npx prettier . --write` will format all your files.
+
+## Known differences
+
+See the [StandardJS test snapshot diff](https://github.com/SheepTester-forks/prettier/commit/1f6d085b5ebdc8cee979ef76728b2647506bf44e). Compared to prettierx,
+
+- Top-level comma expressions are now wrapped in parentheses `;(a, b)`.
+- Long template literals now get wrapped.
 
 ---
 
