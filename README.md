@@ -39,9 +39,11 @@ In VS Code, you can specify the Prettier instance you're using with
 
 ```json
 {
-  "prettier.prettierPath": "@sheeptester/prettier"
+  "prettier.prettierPath": "./node_modules/@sheeptester/prettier/index.mjs"
 }
 ```
+
+<!-- VS Code extension has a bug where it uses basename on prettierPath, so it doesn't support scoped package names like @sheeptester/prettier: https://github.com/prettier/prettier-vscode/blob/main/src/PrettierDynamicInstance.ts#L38 -->
 
 Other IDEs probably have an equivalent setting.
 
