@@ -110,6 +110,35 @@ const options = {
     ],
   },
   singleAttributePerLine: commonOptions.singleAttributePerLine,
+  // [prettierx]
+  offsetTernaryExpressions: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "boolean",
+    default: false,
+    description:
+      'Indent and align ternary expression branches more consistently with "Standard JS" (similar to the corresponding eslint option).',
+  },
+  generatorStarSpacing: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "boolean",
+    default: false,
+    description:
+      "Put spaces around the star (`*`) in generator functions (before and after - similar to the corresponding eslint option). (Default is after only.)",
+  },
+  yieldStarSpacing: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "boolean",
+    default: false,
+    description:
+      "Put spaces around the star (`*`) in `yield*` expressions (before and after - similar to the corresponding eslint option). (Default is after only.)",
+  },
+  spaceBeforeFunctionParen: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "boolean",
+    default: false,
+    description:
+      "Put a space before function parenthesis in all declarations (similar to the corresponding eslint option). (Default is to put a space before function parenthesis for untyped anonymous functions only.)",
+  },
 };
 
 export default options;

@@ -58,6 +58,8 @@ Format options:
                            Defaults to end.
   --no-experimental-ternaries
                            Default behavior of ternaries; keep question marks on the same line as the consequent.
+  --generator-star-spacing Put spaces around the star (\`*\`) in generator functions (before and after - similar to the corresponding eslint option). (Default is after only.)
+                           Defaults to false.
   --html-whitespace-sensitivity <css|strict|ignore>
                            How to handle whitespaces in HTML.
                            Defaults to css.
@@ -66,6 +68,9 @@ Format options:
   --object-wrap <preserve|collapse>
                            How to wrap object literals.
                            Defaults to preserve.
+  --offset-ternary-expressions
+                           Indent and align ternary expression branches more consistently with "Standard JS" (similar to the corresponding eslint option).
+                           Defaults to false.
   --parser <flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|jsonc|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc|mjml>
                            Which parser to use.
   --print-width <int>      The line length where Prettier will try wrap.
@@ -82,6 +87,9 @@ Format options:
                            Defaults to false.
   --single-quote           Use single quotes instead of double quotes.
                            Defaults to false.
+  --space-before-function-paren
+                           Put a space before function parenthesis in all declarations (similar to the corresponding eslint option). (Default is to put a space before function parenthesis for untyped anonymous functions only.)
+                           Defaults to false.
   --tab-width <int>        Number of spaces per indentation level.
                            Defaults to 2.
   --trailing-comma <all|es5|none>
@@ -91,6 +99,8 @@ Format options:
                            Defaults to false.
   --vue-indent-script-and-style
                            Indent script and style tags in Vue files.
+                           Defaults to false.
+  --yield-star-spacing     Put spaces around the star (\`*\`) in \`yield*\` expressions (before and after - similar to the corresponding eslint option). (Default is after only.)
                            Defaults to false.
 
 Config options:
@@ -234,6 +244,8 @@ Format options:
                            Defaults to end.
   --no-experimental-ternaries
                            Default behavior of ternaries; keep question marks on the same line as the consequent.
+  --generator-star-spacing Put spaces around the star (\`*\`) in generator functions (before and after - similar to the corresponding eslint option). (Default is after only.)
+                           Defaults to false.
   --html-whitespace-sensitivity <css|strict|ignore>
                            How to handle whitespaces in HTML.
                            Defaults to css.
@@ -242,6 +254,9 @@ Format options:
   --object-wrap <preserve|collapse>
                            How to wrap object literals.
                            Defaults to preserve.
+  --offset-ternary-expressions
+                           Indent and align ternary expression branches more consistently with "Standard JS" (similar to the corresponding eslint option).
+                           Defaults to false.
   --parser <flow|babel|babel-flow|babel-ts|typescript|acorn|espree|meriyah|css|less|scss|json|json5|jsonc|json-stringify|graphql|markdown|mdx|vue|yaml|glimmer|html|angular|lwc|mjml>
                            Which parser to use.
   --print-width <int>      The line length where Prettier will try wrap.
@@ -258,6 +273,9 @@ Format options:
                            Defaults to false.
   --single-quote           Use single quotes instead of double quotes.
                            Defaults to false.
+  --space-before-function-paren
+                           Put a space before function parenthesis in all declarations (similar to the corresponding eslint option). (Default is to put a space before function parenthesis for untyped anonymous functions only.)
+                           Defaults to false.
   --tab-width <int>        Number of spaces per indentation level.
                            Defaults to 2.
   --trailing-comma <all|es5|none>
@@ -267,6 +285,8 @@ Format options:
                            Defaults to false.
   --vue-indent-script-and-style
                            Indent script and style tags in Vue files.
+                           Defaults to false.
+  --yield-star-spacing     Put spaces around the star (\`*\`) in \`yield*\` expressions (before and after - similar to the corresponding eslint option). (Default is after only.)
                            Defaults to false.
 
 Config options:

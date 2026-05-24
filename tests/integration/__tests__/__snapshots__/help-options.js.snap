@@ -254,6 +254,18 @@ exports[`show detailed usage with --help find-config-path  1`] = `
 }
 `;
 
+exports[`show detailed usage with --help generator-star-spacing  1`] = `
+{
+  "stderr": "",
+  "stdout": "--generator-star-spacing
+
+  Put spaces around the star (\`*\`) in generator functions (before and after - similar to the corresponding eslint option). (Default is after only.)
+
+Default: false",
+  "write": [],
+}
+`;
+
 exports[`show detailed usage with --help help  1`] = `
 {
   "stderr": "",
@@ -447,6 +459,18 @@ Default: preserve",
 }
 `;
 
+exports[`show detailed usage with --help offset-ternary-expressions  1`] = `
+{
+  "stderr": "",
+  "stdout": "--offset-ternary-expressions
+
+  Indent and align ternary expression branches more consistently with "Standard JS" (similar to the corresponding eslint option).
+
+Default: false",
+  "write": [],
+}
+`;
+
 exports[`show detailed usage with --help parser  1`] = `
 {
   "stderr": "",
@@ -619,6 +643,18 @@ Default: false",
 }
 `;
 
+exports[`show detailed usage with --help space-before-function-paren  1`] = `
+{
+  "stderr": "",
+  "stdout": "--space-before-function-paren
+
+  Put a space before function parenthesis in all declarations (similar to the corresponding eslint option). (Default is to put a space before function parenthesis for untyped anonymous functions only.)
+
+Default: false",
+  "write": [],
+}
+`;
+
 exports[`show detailed usage with --help stdin-filepath  1`] = `
 {
   "stderr": "",
@@ -719,6 +755,18 @@ exports[`show detailed usage with --help write  1`] = `
   "stdout": "-w, --write
 
   Edit files in-place. (Beware!)",
+  "write": [],
+}
+`;
+
+exports[`show detailed usage with --help yield-star-spacing  1`] = `
+{
+  "stderr": "",
+  "stdout": "--yield-star-spacing
+
+  Put spaces around the star (\`*\`) in \`yield*\` expressions (before and after - similar to the corresponding eslint option). (Default is after only.)
+
+Default: false",
   "write": [],
 }
 `;
