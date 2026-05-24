@@ -2,10 +2,14 @@
   "name": "@sheeptester/prettier",
   "version": "3.9.0-alpha.0",
   "description": "Prettier is an opinionated code formatter",
-  "bin": "./bin/prettier.cjs",
-  "repository": "prettier/prettier",
-  "funding": "https://github.com/prettier/prettier?sponsor=1",
-  "homepage": "https://prettier.io",
+  "bin": {
+    "prettier": "bin/prettier.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheepTester-forks/prettier.git"
+  },
+  "homepage": "https://github.com/SheepTester-forks/prettier#readme",
   "author": "James Long",
   "type": "module",
   "license": "MIT",
