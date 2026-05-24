@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`conflict-107.ts - {"endOfLine":"lf","yieldStarSpacing":true,"generatorStarSpacing":true,"offsetTernaryExpressions":true,"spaceBeforeFunctionParen":true,"singleQuote":true,"jsxSingleQuote":true,"semi":false,"trailingComma":"none","arrowParens":"avoid"} format 1`] = `
+====================================options=====================================
+arrowParens: "avoid"
+endOfLine: "lf"
+generatorStarSpacing: true
+jsxSingleQuote: true
+offsetTernaryExpressions: true
+parsers: ["typescript"]
+semi: false
+singleQuote: true
+spaceBeforeFunctionParen: true
+trailingComma: "none"
+yieldStarSpacing: true
+                                                      printWidth: 80 (default) |
+=====================================input======================================
+// https://github.com/brody2consult/prettierx/issues/107<LF>
+const MyComponent = <T, >({x, y, z}: Props<T>) => {}<LF>
+
+=====================================output=====================================
+// https://github.com/brody2consult/prettierx/issues/107<LF>
+const MyComponent = <T>({ x, y, z }: Props<T>) => {}<LF>
+
+================================================================================
+`;
+
+exports[`misc.ts - {"endOfLine":"lf","yieldStarSpacing":true,"generatorStarSpacing":true,"offsetTernaryExpressions":true,"spaceBeforeFunctionParen":true,"singleQuote":true,"jsxSingleQuote":true,"semi":false,"trailingComma":"none","arrowParens":"avoid"} format 1`] = `
+====================================options=====================================
+arrowParens: "avoid"
+endOfLine: "lf"
+generatorStarSpacing: true
+jsxSingleQuote: true
+offsetTernaryExpressions: true
+parsers: ["typescript"]
+semi: false
+singleQuote: true
+spaceBeforeFunctionParen: true
+trailingComma: "none"
+yieldStarSpacing: true
+                                                      printWidth: 80 (default) |
+=====================================input======================================
+declare function wow1()<LF>
+<LF>
+interface Wow2 {<LF>
+  wow()<LF>
+}<LF>
+<LF>
+import wow2 from 'wow.json' with {type: 'json'}<LF>
+
+=====================================output=====================================
+declare function wow1 ();<LF>
+<LF>
+interface Wow2 {<LF>
+  wow()<LF>
+}<LF>
+<LF>
+import wow2 from 'wow.json' with { type: 'json' }<LF>
+
+================================================================================
+`;

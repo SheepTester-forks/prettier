@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
+exports[`conflict-21.js - {"endOfLine":"lf","yieldStarSpacing":true,"generatorStarSpacing":true,"offsetTernaryExpressions":true,"spaceBeforeFunctionParen":true,"singleQuote":true,"jsxSingleQuote":true,"semi":false,"trailingComma":"none","arrowParens":"avoid"} format 1`] = `
+====================================options=====================================
+arrowParens: "avoid"
+endOfLine: "lf"
+generatorStarSpacing: true
+jsxSingleQuote: true
+offsetTernaryExpressions: true
+parsers: ["babel", "flow", "typescript"]
+semi: false
+singleQuote: true
+spaceBeforeFunctionParen: true
+trailingComma: "none"
+yieldStarSpacing: true
+                                                      printWidth: 80 (default) |
+=====================================input======================================
+// https://github.com/brody2consult/prettierx/issues/21<LF>
+<LF>
+export class Foo {<LF>
+  static [Symbol.hasInstance]  (obj) {<LF>
+    return 'bar' in obj<LF>
+  }<LF>
+}<LF>
+
+=====================================output=====================================
+// https://github.com/brody2consult/prettierx/issues/21<LF>
+<LF>
+export class Foo {<LF>
+  static [Symbol.hasInstance] (obj) {<LF>
+    return 'bar' in obj<LF>
+  }<LF>
+}<LF>
+
+================================================================================
+`;
+
 exports[`correct.js - {"endOfLine":"lf","yieldStarSpacing":true,"generatorStarSpacing":true,"offsetTernaryExpressions":true,"spaceBeforeFunctionParen":true,"singleQuote":true,"jsxSingleQuote":true,"semi":false,"trailingComma":"none","arrowParens":"avoid"} format 1`] = `
 ====================================options=====================================
 arrowParens: "avoid"
