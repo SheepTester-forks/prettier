@@ -1,6 +1,6 @@
 {
   "name": "@sheeptester/prettier",
-  "version": "3.9.0-alpha",
+  "version": "3.9.0",
   "description": "Prettier is an opinionated code formatter",
   "bin": {
     "prettier": "bin/prettier.cjs"

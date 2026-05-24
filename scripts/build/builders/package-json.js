@@ -61,7 +61,7 @@ function createPackageJsonBuilder({ process }) {
       ).output;
 
       assert.ok(typeof bin === "string");
-      packageJson.bin = { prettier: `./${bin}` };
+      packageJson.bin = { prettier: bin };
     }
 
     if (process) {
